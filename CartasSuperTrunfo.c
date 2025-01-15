@@ -35,14 +35,14 @@ int main() {
     printf("Digite qual a area da cidade:\n");
     scanf(" %d", &area);
 
-    printf("Digite Qual é o PIB da cidade:\n ");
+    printf("Digite Qual é o PIB da cidade:\n");
     scanf(" %d", &PIB);
 
     printf("Digite agora o numero de Pontos turisticos da cidade:\n");
     scanf(" %d", &numero_de_pontos_turisticos);
 
     //a partir daqui sera feita a impressão dos resultados
-    
+
     printf("\n-Cadastro feito com Sucesso:\n");
     printf("\n-Cidade:\n %s \n", nome);
     printf("-Habitantes:\n %d \n", habitantes);
