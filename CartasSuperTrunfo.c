@@ -19,9 +19,9 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     char nome[50] = ("Qual sua cidade?");
-    int area;
-    int habitantes;
-    int PIB;
+    float area;
+    float habitantes;
+    float PIB;
     int numero_de_pontos_turisticos;
 
     printf("Cadastros de carta SuperTrunfo.\n "); 
@@ -30,13 +30,13 @@ int main() {
     scanf("%50[^\n]", nome); //usado esse formato pois algumas cidades possuem espaço
     
     printf("Digite a quantidade de Habitantes:\n ");
-    scanf(" %d", &habitantes);
+    scanf(" %f", &habitantes);
     
     printf("Digite qual a area da cidade:\n");
-    scanf(" %d", &area);
+    scanf(" %f", &area);
 
     printf("Digite Qual é o PIB da cidade:\n");
-    scanf(" %d", &PIB);
+    scanf(" %f", &PIB);
 
     printf("Digite agora o numero de Pontos turisticos da cidade:\n");
     scanf(" %d", &numero_de_pontos_turisticos);
@@ -45,9 +45,10 @@ int main() {
 
     printf("\n-Cadastro feito com Sucesso:\n");
     printf("\n-Cidade:\n %s \n", nome);
-    printf("-Habitantes:\n %d \n", habitantes);
-    printf("-A area da cidade é:\n %d \n", area);
-    printf("-O PIB da cidade:\n %d \n", PIB);
+    printf("*********************************\n");
+    printf("-Habitantes:\n %.3f \n", habitantes);
+    printf("-A area da cidade é:\n %.3f \n", area);
+    printf("-O PIB da cidade:\n %.3f \n", PIB);
     printf("-A Quantidade de Pontos turisticos:\n %d \n", numero_de_pontos_turisticos);
     printf("Obrigado!");
 
