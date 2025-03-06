@@ -19,7 +19,7 @@ int main()
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    char estado1[3] = "", estado2[3]= "";
+    char estado1[3] , estado2[3];
     char cidade1[50] , cidade2 [50];
     char codigo1[4] , codigo2[4];
     float area1 , habitantes1 , PIB1 ;
@@ -54,6 +54,7 @@ int main()
     printf("Digite agora o numero de Pontos turisticos da cidade: ");
     scanf(" %d", &numeroDePontosTuristicos1);
 
+    
         // SEGUNDA CARTA
     printf("\n\nCarta2: \n");
     printf("Digite o Codigo da carta(1 letra e 2 numeros):");
@@ -89,8 +90,15 @@ int main()
     printf("Nome da Cidade: %s\n" , cidade1);
     printf("Populacao: %.3f habitantes\n", habitantes1);
     printf("Area: %.3f km²\n", area1);
-    printf("PIB: %.3f  bilhoes de reais\n", PIB1);
-    printf("-A Quantidade de Pontos turisticos: %d \n\n", numeroDePontosTuristicos1);
+    printf("PIB: %.3f bilhoes de reais\n", PIB1);
+    printf("Pontos turisticos: %d \n", numeroDePontosTuristicos1);
+    
+    perCapita1 = PIB1 / habitantes1;
+    printf("Renda PerCapita: %d\n" , perCapita1);
+
+    densPopulacional1 = habitantes1 / area1;
+    printf("Densidade populacional: %.2f\n\n" , densPopulacional1);
+
 
         //Carta2 
     printf("Carta 2 :\n");;
@@ -99,9 +107,14 @@ int main()
     printf("Nome da Cidade: %s\n" , cidade2);
     printf("Populacao: %.3f habitantes\n", habitantes2);
     printf("Area: %.3f km²\n", area1);
-    printf("PIB: %.3f  bilhoes de reais\n", PIB2);
-    printf("-A Quantidade de Pontos turisticos: %d \n", numeroDePontosTuristicos2);
+    printf("PIB: %.3f bilhoes de reais\n", PIB2);
+    printf("Pontos turisticos: %d \n", numeroDePontosTuristicos2);
  
+    perCapita2 = PIB2 / habitantes2;
+    printf("Renda PerCapita: %d\n" , perCapita2);
+
+    densPopulacional2 = habitantes2 / area2;
+    printf("Densidade populacional: %.2f \n\n" , densPopulacional2);
  
     printf("Obrigado!");
 
